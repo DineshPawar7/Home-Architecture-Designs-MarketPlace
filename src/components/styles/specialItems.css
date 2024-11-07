@@ -1,0 +1,62 @@
+/* Main section container */
+.special-section {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  /* Heading */
+  .special-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  /* Grid layout for images */
+  .special-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Individual item styling */
+  .special-item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .special-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .special-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #eee;
+  }
+  
+  .special-description {
+    font-size: 1rem;
+    color: #555;
+    padding: 15px;
+    font-weight: bold;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 1024px) {
+    .special-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .special-grid {
+      grid-template-columns: 1fr; /* 1 item per row */
+    }
+  }
+  

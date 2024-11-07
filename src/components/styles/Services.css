@@ -1,0 +1,64 @@
+/* Basic styles for the services section */
+.services-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .services-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  /* Flexbox container for responsive cards */
+  .services-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  /* Individual card styles */
+  .service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .service-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .service-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .service-title {
+    padding: 15px;
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .service-card {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .service-card {
+      width: 100%;
+    }
+  }
+  

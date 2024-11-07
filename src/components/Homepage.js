@@ -4,13 +4,13 @@ import './styles/Homepage.css';
 
 const Homepage = () => {
   return (
-    <div className="container">
+    <div className="homepage-container">
       <div className="left-section">
-        <h1 className="heading bg-color">Let's</h1>
-        <h1 className="heading">Explore</h1>
-        <h1 className="heading bg-color">Unique</h1>
-        <h1 className="heading">Designs</h1>
-        <p className="description">
+        <h1 className="homepage-heading bg-color">Let's</h1>
+        <h1 className="homepage-heading">Explore</h1>
+        <h1 className="homepage-heading bg-color">Unique</h1>
+        <h1 className="homepage-heading">Designs</h1>
+        <p className="homepage-description">
         Discover unique architectural designs tailored for your dream home
         </p>
       </div>
@@ -22,7 +22,9 @@ const Homepage = () => {
         />
       </div>
     </div>
+    
   );
 };
+
 
 export default Homepage;

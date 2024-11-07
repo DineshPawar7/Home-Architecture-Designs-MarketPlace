@@ -1,0 +1,68 @@
+/* Container for the whole section */
+.why-choose-section {
+    text-align: center;
+    padding: 10px 20px;
+  }
+  
+  .section-heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  /* Flexbox for layout of the 4 icons in a row */
+  .options-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  /* Individual option card style */
+  .option-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 22%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .option-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .icon-container {
+    font-size: 3rem;
+    color: #007BFF;
+    margin-bottom: 15px;
+  }
+  
+  .option-title {
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .option-description {
+    color: #777;
+    font-size: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .option-card {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .option-card {
+      width: 100%;
+    }
+  }
+  
