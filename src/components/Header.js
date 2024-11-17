@@ -1,8 +1,10 @@
 import React from 'react';
 import { FaSearch, FaHeart, FaShoppingCart } from 'react-icons/fa';
 import './styles/Header.css';
+import { useAuth0 } from '@auth0/auth0-react';
 
 const Header = () => {
+  const { loginWithRedirect } = useAuth0();
   return (
     <header className="header">
       <div className="logo">Rushi- The Cad Designer</div>
@@ -13,6 +15,9 @@ const Header = () => {
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="#services">Services</a></li>
+          <li>
+            <button onClick={() => loginWithRedirect()}>Log In</button>
+          </li>
         </ul>
       </nav>
 
