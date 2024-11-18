@@ -16,7 +16,7 @@ const Header = () => {
           <li><a href="#contact">Contact</a></li>
           <li><a href="#services">Services</a></li>
           <li>
-            <button onClick={() => loginWithRedirect()}>Log In</button>
+          <button onClick={() => loginWithRedirect()}>Log In</button>;
           </li>
         </ul>
       </nav>
