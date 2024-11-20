@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import { FaSearch, FaHeart, FaShoppingCart } from 'react-icons/fa';
 import './styles/Header.css';
 import { useAuth0 } from '@auth0/auth0-react';
@@ -11,12 +12,12 @@ const Header = () => {
 
       <nav className="nav-menu">
         <ul>
-          <li><a href="#home">Home</a></li>
+        <li><Link to="/pricing">Pricing</Link></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="#services">Services</a></li>
           <li>
-          <button onClick={() => loginWithRedirect()}>Log In</button>;
+          <button onClick={() => loginWithRedirect()} className='login-button'>Log In</button>
           </li>
         </ul>
       </nav>

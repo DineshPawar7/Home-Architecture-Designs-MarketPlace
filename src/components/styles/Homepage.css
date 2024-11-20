@@ -19,7 +19,7 @@
     font-family: "Archivo Black", sans-serif;
     color: black;
     padding-left: 2rem;
-    
+  
   }
  
   .homepage-description {
@@ -40,30 +40,78 @@
     height: 40rem;
     border-radius: 8px;
   }
+
   
-  /* Responsive styling */
-  @media (max-width: 768px) {
+  
+
+
+
+
+
+  @media (max-width: 1200px) {
+    .homepage-container {
+      margin: 20px;
+      display: flex;
+    }
+    .image{
+      justify-content: right;
+    height: 20vw;
+     width: 20vw;
+    }
+
+    .homepage-heading {
+      margin: 0;
+      font-size: 3vw;
+    }
+
+    .homepage-description {
+      font-size: 1vw;
+    }
+  
+  }
+
+
+
+
+  /* 
+  @media (max-width: 1200px) {
     .homepage-container {
       flex-direction: column;
-      align-items: center;
     }
   
     .left-section {
-      margin-right: 0;
-      margin-bottom: 20px;
-      text-align: center;
+      justify-content: start;
+      margin: 1rem 0;
     }
   
     .homepage-heading {
-      font-size: 1.2rem;
+      font-size: 7vw; 
+      padding-left: 0; 
     }
   
     .homepage-description {
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
   
     .right-section {
       width: 100%;
+      justify-content: end;
+      margin: 1rem 0;
+    }
+  
+    .image {
+      width: 50%;
+      height: 50%;
+      max-width: 25rem;
     }
   }
   
+  @media (max-width: 480px) {
+    .homepage-heading {
+      font-size: 8vw;
+    }
+  
+    .homepage-description {
+      font-size: 0.8rem;
+    }
+  }  */

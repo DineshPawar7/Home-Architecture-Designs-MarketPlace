@@ -86,6 +86,12 @@
     transform: translateY(0);
   }
 }
+.login-button {
+  display: flex;
+  background-color: rgb(233, 247, 201);
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px;
+}
 
 
 
