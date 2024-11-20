@@ -1,79 +1,96 @@
 .homepage-container {
-    display: flex;
-    margin: 50px;
-    flex-wrap: wrap;
-    background-color: rgb(233, 247, 201);
-    border-radius: 30px;
+  display: flex;
+  margin: 50px;
+  flex-wrap: wrap;
+  background-color: rgb(233, 247, 201);
+  border-radius: 30px;
+}
 
-  }
-  
-  .left-section {
-    flex: 1;
-    margin-left: 4.5rem;
-    margin-top: 2.5rem;
-  }
-  
-  .homepage-heading {
-    text-transform: uppercase;
-    font-size: 6rem;
-    font-family: "Archivo Black", sans-serif;
-    color: black;
-    padding-left: 2rem;
-  
-  }
- 
-  .homepage-description {
-    margin-top: 10px;
-    margin-left: 2rem;
-    font-size: 1.3rem;
-    color: #555;
-  }
-  
-  .right-section {
-    flex: 1;
-    display: flex;
-    margin-left: 2.4rem;
-  }
+.left-section {
+  flex: 1;
+  margin-left: 4.5rem;
+  margin-top: 2.5rem;
+}
+
+.homepage-heading {
+  text-transform: uppercase;
+  font-size: 6rem;
+  font-family: "Archivo Black", sans-serif;
+  color: black;
+  padding-left: 2rem;
+}
+
+.homepage-description {
+  margin-top: 10px;
+  margin-left: 2rem;
+  font-size: 1.3rem;
+  color: #555;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  margin-left: 2.4rem;
+}
+
+.image {
+  width: 35rem;
+  height: 40rem;
+  border-radius: 8px;
+}
+
+@media (max-width: 1302px) {
   
   .image {
-    width: 35rem;
-    height: 40rem;
-    border-radius: 8px;
+    justify-content: right;
+    height: 30rem;
+    width: 30rem;
+    padding-top: 2rem;
   }
 
-  
-  
-
-
-
-
-
-  @media (max-width: 1200px) {
-    .homepage-container {
-      margin: 20px;
-      display: flex;
-    }
-    .image{
-      justify-content: right;
-    height: 20vw;
-     width: 20vw;
-    }
-
-    .homepage-heading {
-      margin: 0;
-      font-size: 3vw;
-    }
-
-    .homepage-description {
-      font-size: 1vw;
-    }
-  
+  .homepage-heading {
+    margin: 0;
+    font-size: 5rem;
   }
 
+  .homepage-description {
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+  }
+}
 
+@media (max-width: 391px) {
+  .homepage-container{
+    align-items: center;
+    }
 
+    .left-section {
+      justify-content: start;
+      margin: 1rem 0;
+      
+    }
 
-  /* 
+    .right-section {
+      justify-content: end;
+    }
+
+  .image {
+    
+    height: 8rem;
+    width: 8rem;
+  }
+
+  .homepage-heading {
+    font-size: 1rem;
+  }
+
+  .homepage-description {
+    font-size: .2rem;
+    margin: 0 1rem 0 2rem;
+  }
+}
+
+/* 
   @media (max-width: 1200px) {
     .homepage-container {
       flex-direction: column;
